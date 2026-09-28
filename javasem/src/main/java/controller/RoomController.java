@@ -38,4 +38,9 @@ public class RoomController {
         repository.deleteById(id);
         return "Room deleted successfully";
     }
+    @DeleteMapping("/{id}")
+    public String deletesan(@PathVariable Long id) {
+        repository.deleteById(id);
+        return "Room deleted successfully";
+    }
 }
